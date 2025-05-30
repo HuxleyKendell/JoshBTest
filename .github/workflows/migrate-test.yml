@@ -12,7 +12,10 @@ on:
 
 jobs: 
   flyway-migrate:
-    runs-on: "self-hosted"
+    runs-on: ${{ matrix.runner }}
+    strategy:
+      matrix:
+        runner: [ self-hosted, runner2, runner3 ] # Replace with your runner names
     defaults:
           run:
             shell: bash    
