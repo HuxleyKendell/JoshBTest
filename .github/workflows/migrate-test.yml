@@ -12,7 +12,7 @@ on:
 
 jobs: 
   flyway-migrate:
-    runs-on: [self-hosted, BTWN004812]
+    runs-on: "self-hosted"
     defaults:
           run:
             shell: bash    
