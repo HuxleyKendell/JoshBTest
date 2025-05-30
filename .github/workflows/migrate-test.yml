@@ -12,7 +12,7 @@ on:
 
 jobs: 
   flyway-migrate:
-    runs-on: ["hux", "hux2"]
+    runs-on: "hux"
     defaults:
           run:
             shell: bash   
