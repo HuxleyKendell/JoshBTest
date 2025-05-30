@@ -1,14 +1,14 @@
 name: Flyway Deploy Test
 on:
-  push:
-    branches:
-      - 'test'
+  #push:
+    #branches:
+      #- 'test'
   workflow_dispatch:
-    inputs:
-      environment:
-        description: 'Environment to run against'
-        required: true
-        default: 'Non-Production'
+    #inputs:
+      #environment:
+        #description: 'Environment to run against'
+        #required: true
+        #default: 'Non-Production'
 
 jobs: 
   flyway-migrate:
